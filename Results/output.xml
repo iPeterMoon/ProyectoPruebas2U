@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-04-29T16:33:32.192431" rpa="false" schemaversion="5">
+<suite id="s1" name="Key Presses" source="C:\Users\Alici\PycharmProjects\ProyectoPruebas2U\Tests\key_presses.robot">
+<test id="s1-t1" name="TC01 Presionar tecla ESC" line="7">
+<kw name="Abrir navegador key presses" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T16:33:32.461363" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
+<msg time="2026-04-29T16:33:32.616392" level="WARN">The chromedriver version (146.0.7680.165) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (147.0.7727.117); currently, chromedriver 147.0.7727.117 is recommended for chrome 147.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL_KEY_PRESSES}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument('--incognito')</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T16:33:32.460788" elapsed="2.403711"/>
+</kw>
+<status status="PASS" start="2026-04-29T16:33:32.459155" elapsed="2.405829"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-29T16:33:34.866850" level="INFO">Clicking element 'css=input[id="target"]'.</msg>
+<arg>css=input[id="target"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-29T16:33:34.865829" elapsed="0.130482"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-29T16:33:34.998166" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg time="2026-04-29T16:33:34.998608" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg time="2026-04-29T16:33:34.998981" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>None</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-29T16:33:34.997019" elapsed="0.018898"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>css=p[id="result"]</arg>
+<arg>You entered: ESCAPE</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-04-29T16:33:35.016849" elapsed="0.043323"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-29T16:33:35.060784" elapsed="2.312522"/>
+</kw>
+<status status="PASS" start="2026-04-29T16:33:32.457551" elapsed="4.916482"/>
+</test>
+<test id="s1-t2" name="TC02 Presionar tecla Espacio" line="14">
+<kw name="Abrir navegador key presses" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T16:33:37.376216" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
+<msg time="2026-04-29T16:33:37.509604" level="WARN">The chromedriver version (146.0.7680.165) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (147.0.7727.117); currently, chromedriver 147.0.7727.117 is recommended for chrome 147.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL_KEY_PRESSES}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument('--incognito')</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T16:33:37.375867" elapsed="2.055104"/>
+</kw>
+<status status="PASS" start="2026-04-29T16:33:37.375464" elapsed="2.055774"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-29T16:33:39.432517" level="INFO">Clicking element 'css=input[id="target"]'.</msg>
+<arg>css=input[id="target"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-29T16:33:39.432008" elapsed="0.145355"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-29T16:33:39.578603" level="INFO">Sending key(s) ('SPACE',) to page.</msg>
+<msg time="2026-04-29T16:33:39.578748" level="INFO">Pressing special key SPACE to browser.</msg>
+<msg time="2026-04-29T16:33:39.578812" level="INFO">Releasing special key SPACE.</msg>
+<arg>None</arg>
+<arg>SPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-29T16:33:39.577975" elapsed="0.019830"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>css=p[id="result"]</arg>
+<arg>You entered: SPACE</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-04-29T16:33:39.598439" elapsed="0.042401"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-29T16:33:39.641431" elapsed="2.272043"/>
+</kw>
+<status status="PASS" start="2026-04-29T16:33:37.374800" elapsed="4.539409"/>
+</test>
+<status status="PASS" start="2026-04-29T16:33:32.195143" elapsed="9.719901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Key Presses" id="s1" pass="2" fail="0" skip="0">Key Presses</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-29T16:33:32.616392" level="WARN">The chromedriver version (146.0.7680.165) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (147.0.7727.117); currently, chromedriver 147.0.7727.117 is recommended for chrome 147.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-04-29T16:33:37.509604" level="WARN">The chromedriver version (146.0.7680.165) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (147.0.7727.117); currently, chromedriver 147.0.7727.117 is recommended for chrome 147.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
