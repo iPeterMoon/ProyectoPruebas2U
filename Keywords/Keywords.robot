@@ -8,3 +8,6 @@ Abrir navegador login
 
 Abrir navegador key presses
     Open Browser    ${URL_KEY_PRESSES}    ${BROWSER}   options=add_argument('--incognito')
+
+Abrir navegador checkboxes
+    Open Browser    ${URL_CHECKBOXES}    ${BROWSER}   options=add_argument('--incognito')
