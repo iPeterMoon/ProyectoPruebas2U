@@ -21,6 +21,14 @@ Abrir navegador disappearing elements
 Abrir navegador drag and drop
     Open Browser    ${URL_DRAG_AND_DROP}    ${BROWSER}    options=add_argument('--incognito')
 
+Abrir navegador add remove elements
+    Open Browser    ${URL_ADD_REMOVE_ELEMENTS}    ${BROWSER}    options=add_argument('--incognito')
+
+Abrir navegador con autenticacion basica
+    [Arguments]    ${username}    ${password}
+    ${auth_url}=    Set Variable    https://${username}:${password}@${URL_BASIC_AUTH.replace("https://", "")}
+    Open Browser    ${auth_url}     ${BROWSER}   options=add_argument('--incognito')
+
 Ingresar credenciales
     [Arguments]     ${usuario}      ${contraseña}
     Input Text    css=input[name="username"]    ${usuario}
@@ -50,3 +58,20 @@ Abrir navegador dynamic controls
 
 Abrir navegador floating menu
     Open Browser    ${URL_FLOATING_MENU}    ${BROWSER}   options=add_argument('--incognito')
+
+Open Page and Verify
+    Abrir navegador add remove elements
+    Maximize Browser Window
+    Wait Until Page Contains    Add/Remove Elements
+
+Add 20 Elements
+    FOR    ${i}    IN RANGE    1    21
+        Click Button    xpath=//button[text()='Add Element']
+        Wait Until Page Contains Element    xpath=(//button[text()='Delete'])[${i}]
+    END
+
+Remove Elements and Verify
+    FOR    ${i}    IN RANGE    20    0    -1
+        Click Button    xpath=(//button[text()='Delete'])[last()]
+        Page Should Not Contain Element    xpath=(//button[text()='Delete'])[${i}]
+    END
