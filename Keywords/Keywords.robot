@@ -41,3 +41,12 @@ Recargar Hasta Boton No Visible
     [Arguments]    ${boton}
     Reload Page
     Page Should Not Contain Element    ${boton}
+
+
+Abrir navegador dynamic controls
+    Open Browser    ${URL_DYNAMIC_CONTROLS}    ${BROWSER}   options=add_argument('--incognito')
+    Maximize Browser Window
+
+
+Abrir navegador floating menu
+    Open Browser    ${URL_FLOATING_MENU}    ${BROWSER}   options=add_argument('--incognito')

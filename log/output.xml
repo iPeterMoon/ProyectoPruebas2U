@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-04-29T21:54:40.015089" rpa="false" schemaversion="5">
+<suite id="s1" name="Floating Menu" source="C:\Users\adell\Documents\GitHub\ProyectoPruebas2U\Tests\floating_menu.robot">
+<test id="s1-t1" name="TC01 Validar menu flotante" line="8">
+<kw name="Abrir navegador floating menu" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T21:54:40.203934" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/floating_menu'.</msg>
+<arg>${URL_FLOATING_MENU}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument('--incognito')</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T21:54:40.203537" elapsed="1.822042"/>
+</kw>
+<status status="PASS" start="2026-04-29T21:54:40.202709" elapsed="1.823137"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-04-29T21:54:42.026517" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-04-29T21:54:42.026052" elapsed="0.009170"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-29T21:54:43.036343" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-29T21:54:42.035478" elapsed="1.001107"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@id='menu']//a[text()='Home']</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T21:54:43.036804" elapsed="0.016911"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-29T21:54:43.065813" level="INFO">Element 'xpath=//div[@id='menu']//a[text()='News']' is displayed.</msg>
+<arg>xpath=//div[@id='menu']//a[text()='News']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T21:54:43.053944" elapsed="0.012018"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-29T21:54:43.077407" level="INFO">Element 'xpath=//div[@id='menu']//a[text()='Contact']' is displayed.</msg>
+<arg>xpath=//div[@id='menu']//a[text()='Contact']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T21:54:43.066119" elapsed="0.011426"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-29T21:54:43.089029" level="INFO">Element 'xpath=//div[@id='menu']//a[text()='About']' is displayed.</msg>
+<arg>xpath=//div[@id='menu']//a[text()='About']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T21:54:43.077695" elapsed="0.011471"/>
+</kw>
+<status status="PASS" start="2026-04-29T21:54:40.201890" elapsed="2.887448"/>
+</test>
+<status status="PASS" start="2026-04-29T21:54:40.024724" elapsed="3.065227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Floating Menu" id="s1" pass="1" fail="0" skip="0">Floating Menu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
