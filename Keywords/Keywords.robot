@@ -15,6 +15,12 @@ Abrir navegador checkboxes
 Abrir navegador context menu
     Open Browser    ${URL_CONTEXT_MENU}    ${BROWSER}   options=add_argument('--incognito')
 
+Abrir navegador disappearing elements
+    Open Browser    ${URL_DISAPPEARING_ELEMENTS}    ${BROWSER}   options=add_argument('--incognito')
+
+Abrir navegador drag and drop
+    Open Browser    ${URL_DRAG_AND_DROP}    ${BROWSER}    options=add_argument('--incognito')
+
 Ingresar credenciales
     [Arguments]     ${usuario}      ${contraseña}
     Input Text    css=input[name="username"]    ${usuario}
@@ -25,3 +31,13 @@ Aceptar alerta
 
 Validar que no exista una alerta
     Alert Should Not Be Present
+
+Recargar Hasta Boton Visible
+    [Arguments]    ${boton}
+    Reload Page
+    Page Should Contain Element    ${boton}
+
+Recargar Hasta Boton No Visible
+    [Arguments]    ${boton}
+    Reload Page
+    Page Should Not Contain Element    ${boton}
