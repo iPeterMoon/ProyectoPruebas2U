@@ -1,362 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.4 on linux)" generated="2026-04-29T17:49:50.882695" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.4 on linux)" generated="2026-04-29T18:31:15.758230" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/petermoon/Documentos/GitHub/ProyectoPruebas2U/Tests">
 <suite id="s1-s1" name="Checkboxes" source="/home/petermoon/Documentos/GitHub/ProyectoPruebas2U/Tests/checkboxes.robot">
 <test id="s1-s1-t1" name="Seleccionar checkboxes" line="7">
 <kw name="Abrir navegador checkboxes" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:50.984161" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
+<msg time="2026-04-29T18:31:15.860418" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
 <arg>${URL_CHECKBOXES}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:49:50.983975" elapsed="1.427446"/>
+<status status="PASS" start="2026-04-29T18:31:15.860188" elapsed="1.465827"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:50.983506" elapsed="1.428240"/>
+<status status="PASS" start="2026-04-29T18:31:15.859706" elapsed="1.466452"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=(//form[@id="checkboxes"]/input)[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-29T17:49:52.412172" elapsed="0.014991"/>
+<status status="PASS" start="2026-04-29T18:31:17.326315" elapsed="0.015336"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:52.427543" level="INFO">Selecting checkbox 'xpath=(//form[@id="checkboxes"]/input)[1]'.</msg>
+<msg time="2026-04-29T18:31:17.342028" level="INFO">Selecting checkbox 'xpath=(//form[@id="checkboxes"]/input)[1]'.</msg>
 <arg>xpath=(//form[@id="checkboxes"]/input)[1]</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:49:52.427354" elapsed="0.048271"/>
+<status status="PASS" start="2026-04-29T18:31:17.341836" elapsed="0.052990"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:52.476084" level="INFO">Verifying checkbox 'xpath=(//form[@id="checkboxes"]/input)[1]' is selected.</msg>
+<msg time="2026-04-29T18:31:17.395200" level="INFO">Verifying checkbox 'xpath=(//form[@id="checkboxes"]/input)[1]' is selected.</msg>
 <arg>xpath=(//form[@id="checkboxes"]/input)[1]</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-04-29T17:49:52.475879" elapsed="0.011483"/>
+<status status="PASS" start="2026-04-29T18:31:17.395001" elapsed="0.013543"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:52.487682" level="INFO">Selecting checkbox 'xpath=(//form[@id="checkboxes"]/input)[2]'.</msg>
+<msg time="2026-04-29T18:31:17.408918" level="INFO">Selecting checkbox 'xpath=(//form[@id="checkboxes"]/input)[2]'.</msg>
 <arg>xpath=(//form[@id="checkboxes"]/input)[2]</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:49:52.487525" elapsed="0.013505"/>
+<status status="PASS" start="2026-04-29T18:31:17.408714" elapsed="0.013627"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:52.501415" level="INFO">Verifying checkbox 'xpath=(//form[@id="checkboxes"]/input)[2]' is selected.</msg>
+<msg time="2026-04-29T18:31:17.422681" level="INFO">Verifying checkbox 'xpath=(//form[@id="checkboxes"]/input)[2]' is selected.</msg>
 <arg>xpath=(//form[@id="checkboxes"]/input)[2]</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-04-29T17:49:52.501233" elapsed="0.011482"/>
+<status status="PASS" start="2026-04-29T18:31:17.422498" elapsed="0.011676"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:50.983117" elapsed="1.529893"/>
+<status status="PASS" start="2026-04-29T18:31:15.859285" elapsed="1.575053"/>
 </test>
-<status status="PASS" start="2026-04-29T17:49:50.909189" elapsed="1.604259"/>
+<status status="PASS" start="2026-04-29T18:31:15.784581" elapsed="1.650131"/>
 </suite>
 <suite id="s1-s2" name="Context Menu" source="/home/petermoon/Documentos/GitHub/ProyectoPruebas2U/Tests/context_menu.robot">
 <test id="s1-s2-t1" name="TC01 Validar alerta de context menu" line="7">
 <kw name="Abrir navegador context menu" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:52.516949" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
+<msg time="2026-04-29T18:31:17.437596" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
 <arg>${URL_CONTEXT_MENU}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:49:52.516761" elapsed="1.260066"/>
+<status status="PASS" start="2026-04-29T18:31:17.437427" elapsed="1.403529"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:52.516554" elapsed="1.260390"/>
+<status status="PASS" start="2026-04-29T18:31:17.437236" elapsed="1.403862"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>css=#hot-spot</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-29T17:49:53.777102" elapsed="0.012622"/>
+<status status="PASS" start="2026-04-29T18:31:18.841232" elapsed="0.013983"/>
 </kw>
 <kw name="Open Context Menu" owner="SeleniumLibrary">
 <arg>css=#hot-spot</arg>
 <doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:49:53.789925" elapsed="0.268590"/>
+<status status="PASS" start="2026-04-29T18:31:18.855449" elapsed="0.276556"/>
 </kw>
-<kw name="Obtener texto de alerta sin cerrarla" owner="Keywords">
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:54.059121" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<msg time="2026-04-29T17:49:54.062605" level="INFO">${texto_alerta} = You selected a context menu</msg>
+<msg time="2026-04-29T18:31:19.132319" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2026-04-29T18:31:19.135426" level="INFO">${texto_alerta} = You selected a context menu</msg>
 <var>${texto_alerta}</var>
 <arg>LEAVE</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2026-04-29T17:49:54.059015" elapsed="0.003624"/>
-</kw>
-<return>
-<value>${texto_alerta}</value>
-<status status="PASS" start="2026-04-29T17:49:54.062717" elapsed="0.000153"/>
-</return>
-<msg time="2026-04-29T17:49:54.063040" level="INFO">${texto_alerta} = You selected a context menu</msg>
-<var>${texto_alerta}</var>
-<status status="PASS" start="2026-04-29T17:49:54.058795" elapsed="0.004274"/>
+<status status="PASS" start="2026-04-29T18:31:19.132176" elapsed="0.003277"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${texto_alerta}</arg>
 <arg>${TEXTO_ALERTA_CONTEXT_MENU}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2026-04-29T17:49:54.063198" elapsed="0.000358"/>
+<status status="PASS" start="2026-04-29T18:31:19.135550" elapsed="0.000321"/>
 </kw>
 <kw name="Aceptar alerta" owner="Keywords">
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:54.063976" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2026-04-29T18:31:19.136237" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>ACCEPT</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2026-04-29T17:49:54.063899" elapsed="0.005428"/>
+<status status="PASS" start="2026-04-29T18:31:19.136160" elapsed="0.006207"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:54.063708" elapsed="0.005696"/>
+<status status="PASS" start="2026-04-29T18:31:19.135991" elapsed="0.006458"/>
 </kw>
 <kw name="Validar que no exista una alerta" owner="Keywords">
 <kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
 <doc>Verifies that no alert is present.</doc>
-<status status="PASS" start="2026-04-29T17:49:54.069780" elapsed="5.029881"/>
+<status status="PASS" start="2026-04-29T18:31:19.142795" elapsed="5.040806"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:54.069559" elapsed="5.030221"/>
+<status status="PASS" start="2026-04-29T18:31:19.142579" elapsed="5.041123"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-29T17:49:59.099947" elapsed="0.054951"/>
+<status status="PASS" start="2026-04-29T18:31:24.183822" elapsed="0.054492"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:52.516235" elapsed="6.638910"/>
+<status status="PASS" start="2026-04-29T18:31:17.436911" elapsed="6.801548"/>
 </test>
-<status status="PASS" start="2026-04-29T17:49:52.513887" elapsed="6.641531"/>
+<status status="PASS" start="2026-04-29T18:31:17.435098" elapsed="6.803615"/>
 </suite>
 <suite id="s1-s3" name="Key Presses" source="/home/petermoon/Documentos/GitHub/ProyectoPruebas2U/Tests/key_presses.robot">
 <test id="s1-s3-t1" name="TC01 Presionar tecla ESC" line="7">
 <kw name="Abrir navegador key presses" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:49:59.158350" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
+<msg time="2026-04-29T18:31:24.241413" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
 <arg>${URL_KEY_PRESSES}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:49:59.158162" elapsed="1.658111"/>
+<status status="PASS" start="2026-04-29T18:31:24.241244" elapsed="1.264238"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:59.157951" elapsed="1.658436"/>
+<status status="PASS" start="2026-04-29T18:31:24.241066" elapsed="1.264524"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:00.816821" level="INFO">Clicking element 'css=input[id="target"]'.</msg>
+<msg time="2026-04-29T18:31:25.505906" level="INFO">Clicking element 'css=input[id="target"]'.</msg>
 <arg>css=input[id="target"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:00.816559" elapsed="0.045234"/>
+<status status="PASS" start="2026-04-29T18:31:25.505712" elapsed="0.046919"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:00.862470" level="INFO">Sending key(s) ('ESC',) to page.</msg>
-<msg time="2026-04-29T17:50:00.862585" level="INFO">Pressing special key ESCAPE to browser.</msg>
-<msg time="2026-04-29T17:50:00.862656" level="INFO">Releasing special key ESCAPE.</msg>
+<msg time="2026-04-29T18:31:25.553256" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg time="2026-04-29T18:31:25.553332" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg time="2026-04-29T18:31:25.553375" level="INFO">Releasing special key ESCAPE.</msg>
 <arg>None</arg>
 <arg>ESC</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:00.862017" elapsed="0.004835"/>
+<status status="PASS" start="2026-04-29T18:31:25.552883" elapsed="0.006769"/>
 </kw>
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>css=p[id="result"]</arg>
 <arg>You entered: ESCAPE</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2026-04-29T17:50:00.867030" elapsed="0.013042"/>
+<status status="PASS" start="2026-04-29T18:31:25.559864" elapsed="0.013299"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:00.880291" elapsed="0.054753"/>
+<status status="PASS" start="2026-04-29T18:31:25.573329" elapsed="0.054345"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:49:59.157661" elapsed="1.777559"/>
+<status status="PASS" start="2026-04-29T18:31:24.240805" elapsed="1.387035"/>
 </test>
 <test id="s1-s3-t2" name="TC02 Presionar tecla Espacio" line="14">
 <kw name="Abrir navegador key presses" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:00.936193" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
+<msg time="2026-04-29T18:31:25.628676" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
 <arg>${URL_KEY_PRESSES}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:50:00.935956" elapsed="1.264177"/>
+<status status="PASS" start="2026-04-29T18:31:25.628495" elapsed="1.373226"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:00.935695" elapsed="1.264559"/>
+<status status="PASS" start="2026-04-29T18:31:25.628308" elapsed="1.373533"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:02.200630" level="INFO">Clicking element 'css=input[id="target"]'.</msg>
+<msg time="2026-04-29T18:31:27.002241" level="INFO">Clicking element 'css=input[id="target"]'.</msg>
 <arg>css=input[id="target"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:02.200426" elapsed="0.043216"/>
+<status status="PASS" start="2026-04-29T18:31:27.001969" elapsed="0.043811"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:02.244243" level="INFO">Sending key(s) ('SPACE',) to page.</msg>
-<msg time="2026-04-29T17:50:02.244313" level="INFO">Pressing special key SPACE to browser.</msg>
-<msg time="2026-04-29T17:50:02.244351" level="INFO">Releasing special key SPACE.</msg>
+<msg time="2026-04-29T18:31:27.046376" level="INFO">Sending key(s) ('SPACE',) to page.</msg>
+<msg time="2026-04-29T18:31:27.046446" level="INFO">Pressing special key SPACE to browser.</msg>
+<msg time="2026-04-29T18:31:27.046510" level="INFO">Releasing special key SPACE.</msg>
 <arg>None</arg>
 <arg>SPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:02.243887" elapsed="0.005569"/>
+<status status="PASS" start="2026-04-29T18:31:27.045963" elapsed="0.006174"/>
 </kw>
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>css=p[id="result"]</arg>
 <arg>You entered: SPACE</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2026-04-29T17:50:02.249736" elapsed="0.014636"/>
+<status status="PASS" start="2026-04-29T18:31:27.052303" elapsed="0.013283"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:02.264571" elapsed="0.054602"/>
+<status status="PASS" start="2026-04-29T18:31:27.065736" elapsed="0.054401"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:00.935406" elapsed="1.383935"/>
+<status status="PASS" start="2026-04-29T18:31:25.628036" elapsed="1.492253"/>
 </test>
-<status status="PASS" start="2026-04-29T17:49:59.155741" elapsed="3.163811"/>
+<status status="PASS" start="2026-04-29T18:31:24.239055" elapsed="2.881500"/>
 </suite>
 <suite id="s1-s4" name="Login" source="/home/petermoon/Documentos/GitHub/ProyectoPruebas2U/Tests/login.robot">
 <test id="s1-s4-t1" name="TC01 Login exitoso y logout" line="7">
 <kw name="Abrir navegador login" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:02.322195" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-04-29T18:31:27.123493" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${URL_LOGIN}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:50:02.322018" elapsed="1.574640"/>
+<status status="PASS" start="2026-04-29T18:31:27.123317" elapsed="1.523540"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:02.321827" elapsed="1.574938"/>
+<status status="PASS" start="2026-04-29T18:31:27.123108" elapsed="1.523877"/>
 </kw>
 <kw name="Ingresar credenciales" owner="Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:03.897459" level="INFO">Typing text 'tomsmith' into text field 'css=input[name="username"]'.</msg>
+<msg time="2026-04-29T18:31:28.647662" level="INFO">Typing text 'tomsmith' into text field 'css=input[name="username"]'.</msg>
 <arg>css=input[name="username"]</arg>
 <arg>${usuario}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:03.897281" elapsed="0.050829"/>
+<status status="PASS" start="2026-04-29T18:31:28.647472" elapsed="0.053290"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:03.948497" level="INFO">Typing text 'SuperSecretPassword!' into text field 'css=input[name="password"]'.</msg>
+<msg time="2026-04-29T18:31:28.701170" level="INFO">Typing text 'SuperSecretPassword!' into text field 'css=input[name="password"]'.</msg>
 <arg>css=input[name="password"]</arg>
 <arg>${contraseña}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:03.948269" elapsed="0.042464"/>
+<status status="PASS" start="2026-04-29T18:31:28.700935" elapsed="0.044038"/>
 </kw>
 <arg>${USUARIO_CORRECTO}</arg>
 <arg>${CONTRASEÑA_CORRECTA}</arg>
-<status status="PASS" start="2026-04-29T17:50:03.896976" elapsed="0.093879"/>
+<status status="PASS" start="2026-04-29T18:31:28.647164" elapsed="0.097926"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:03.991244" level="INFO">Clicking element 'xpath=//i[contains(text(),"Login")]'.</msg>
+<msg time="2026-04-29T18:31:28.745414" level="INFO">Clicking element 'xpath=//i[contains(text(),"Login")]'.</msg>
 <arg>xpath=//i[contains(text(),"Login")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:03.991040" elapsed="0.037437"/>
+<status status="PASS" start="2026-04-29T18:31:28.745220" elapsed="0.204816"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>You logged into a secure area!</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-29T17:50:04.028686" elapsed="0.399019"/>
+<status status="PASS" start="2026-04-29T18:31:28.950243" elapsed="0.028272"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:04.428092" level="INFO">Clicking element 'xpath=//i[contains(text(),"Logout")]'.</msg>
+<msg time="2026-04-29T18:31:28.978877" level="INFO">Clicking element 'xpath=//i[contains(text(),"Logout")]'.</msg>
 <arg>xpath=//i[contains(text(),"Logout")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:04.427906" elapsed="0.210322"/>
+<status status="PASS" start="2026-04-29T18:31:28.978681" elapsed="0.209214"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Login Page</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-29T17:50:04.638416" elapsed="0.006211"/>
+<status status="PASS" start="2026-04-29T18:31:29.188124" elapsed="0.006291"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:04.644786" elapsed="0.054653"/>
+<status status="PASS" start="2026-04-29T18:31:29.194543" elapsed="0.054697"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:02.321557" elapsed="2.378055"/>
+<status status="PASS" start="2026-04-29T18:31:27.122723" elapsed="2.126655"/>
 </test>
 <test id="s1-s4-t2" name="TC02 Login fallido usuario invalido" line="16">
 <kw name="Abrir navegador login" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:04.700632" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-04-29T18:31:29.250218" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${URL_LOGIN}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:50:04.700415" elapsed="1.764522"/>
+<status status="PASS" start="2026-04-29T18:31:29.250037" elapsed="1.483415"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:04.700172" elapsed="1.764922"/>
+<status status="PASS" start="2026-04-29T18:31:29.249842" elapsed="1.483727"/>
 </kw>
 <kw name="Ingresar credenciales" owner="Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:06.465977" level="INFO">Typing text 'tomsmith1' into text field 'css=input[name="username"]'.</msg>
+<msg time="2026-04-29T18:31:30.734264" level="INFO">Typing text 'tomsmith1' into text field 'css=input[name="username"]'.</msg>
 <arg>css=input[name="username"]</arg>
 <arg>${usuario}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:06.465796" elapsed="0.053183"/>
+<status status="PASS" start="2026-04-29T18:31:30.734096" elapsed="0.054068"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:06.519354" level="INFO">Typing text 'SuperSecretPassword!' into text field 'css=input[name="password"]'.</msg>
+<msg time="2026-04-29T18:31:30.788579" level="INFO">Typing text 'SuperSecretPassword!' into text field 'css=input[name="password"]'.</msg>
 <arg>css=input[name="password"]</arg>
 <arg>${contraseña}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:06.519137" elapsed="0.040623"/>
+<status status="PASS" start="2026-04-29T18:31:30.788338" elapsed="0.043699"/>
 </kw>
 <arg>${USUARIO_INCORRECTO}</arg>
 <arg>${CONTRASEÑA_CORRECTA}</arg>
-<status status="PASS" start="2026-04-29T17:50:06.465411" elapsed="0.094464"/>
+<status status="PASS" start="2026-04-29T18:31:30.733756" elapsed="0.098376"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:06.560238" level="INFO">Clicking element 'xpath=//i[contains(text(),"Login")]'.</msg>
+<msg time="2026-04-29T18:31:30.832405" level="INFO">Clicking element 'xpath=//i[contains(text(),"Login")]'.</msg>
 <arg>xpath=//i[contains(text(),"Login")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:06.560046" elapsed="0.251989"/>
+<status status="PASS" start="2026-04-29T18:31:30.832242" elapsed="0.037549"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Your username is invalid!</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-29T17:50:06.812259" elapsed="0.026526"/>
+<status status="PASS" start="2026-04-29T18:31:30.870039" elapsed="0.195847"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:06.838996" elapsed="0.055056"/>
+<status status="PASS" start="2026-04-29T18:31:31.066091" elapsed="0.055898"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:04.699803" elapsed="2.194461"/>
+<status status="PASS" start="2026-04-29T18:31:29.249556" elapsed="1.872736"/>
 </test>
 <test id="s1-s4-t3" name="TC03 Login fallido contraseña invalida" line="23">
 <kw name="Abrir navegador login" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:06.895192" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-04-29T18:31:31.123593" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${URL_LOGIN}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument('--incognito')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-29T17:50:06.895010" elapsed="1.474627"/>
+<status status="PASS" start="2026-04-29T18:31:31.123385" elapsed="1.765416"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:06.894784" elapsed="1.474973"/>
+<status status="PASS" start="2026-04-29T18:31:31.123151" elapsed="1.765786"/>
 </kw>
 <kw name="Ingresar credenciales" owner="Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:08.370595" level="INFO">Typing text 'tomsmith' into text field 'css=input[name="username"]'.</msg>
+<msg time="2026-04-29T18:31:32.889759" level="INFO">Typing text 'tomsmith' into text field 'css=input[name="username"]'.</msg>
 <arg>css=input[name="username"]</arg>
 <arg>${usuario}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:08.370403" elapsed="0.052613"/>
+<status status="PASS" start="2026-04-29T18:31:32.889551" elapsed="0.055944"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:08.423446" level="INFO">Typing text 'SuperS1ecretPassword!' into text field 'css=input[name="password"]'.</msg>
+<msg time="2026-04-29T18:31:32.945940" level="INFO">Typing text 'SuperS1ecretPassword!' into text field 'css=input[name="password"]'.</msg>
 <arg>css=input[name="password"]</arg>
 <arg>${contraseña}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:08.423190" elapsed="0.040732"/>
+<status status="PASS" start="2026-04-29T18:31:32.945670" elapsed="0.040670"/>
 </kw>
 <arg>${USUARIO_CORRECTO}</arg>
 <arg>${CONTRASEÑA_INCORRECTA}</arg>
-<status status="PASS" start="2026-04-29T17:50:08.370059" elapsed="0.093978"/>
+<status status="PASS" start="2026-04-29T18:31:32.889137" elapsed="0.097316"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-29T17:50:08.464400" level="INFO">Clicking element 'xpath=//i[contains(text(),"Login")]'.</msg>
+<msg time="2026-04-29T18:31:32.986785" level="INFO">Clicking element 'xpath=//i[contains(text(),"Login")]'.</msg>
 <arg>xpath=//i[contains(text(),"Login")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-29T17:50:08.464208" elapsed="0.038123"/>
+<status status="PASS" start="2026-04-29T18:31:32.986586" elapsed="0.270484"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Your password is invalid!</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-29T17:50:08.502568" elapsed="0.197444"/>
+<status status="PASS" start="2026-04-29T18:31:33.257232" elapsed="0.006948"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-29T17:50:08.700220" elapsed="0.054995"/>
+<status status="PASS" start="2026-04-29T18:31:33.264355" elapsed="0.054887"/>
 </kw>
-<status status="PASS" start="2026-04-29T17:50:06.894452" elapsed="1.860941"/>
+<status status="PASS" start="2026-04-29T18:31:31.122633" elapsed="2.196762"/>
 </test>
-<status status="PASS" start="2026-04-29T17:50:02.319844" elapsed="6.435782"/>
+<status status="PASS" start="2026-04-29T18:31:27.120942" elapsed="6.198703"/>
 </suite>
-<status status="PASS" start="2026-04-29T17:49:50.883302" elapsed="17.872704"/>
+<status status="PASS" start="2026-04-29T18:31:15.759029" elapsed="17.560998"/>
 </suite>
 <statistics>
 <total>
