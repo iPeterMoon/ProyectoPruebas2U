@@ -11,3 +11,5 @@ Seleccionar checkboxes
     Checkbox Should Be Selected    xpath=(//form[@id="checkboxes"]/input)[1]
     Select Checkbox    xpath=(//form[@id="checkboxes"]/input)[2]
     Checkbox Should Be Selected    xpath=(//form[@id="checkboxes"]/input)[2]
+
+
